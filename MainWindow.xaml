@@ -7,51 +7,64 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
-        <TextBlock DockPanel.Dock="Top">Formulario</TextBlock>
+        <TextBlock DockPanel.Dock="Top"
+                   TextAlignment="Center"
+                   FontSize="40"
+                   FontWeight="Bold">Formulario</TextBlock>
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
-            <TextBlock DockPanel.Dock="Left">
+            <TextBlock DockPanel.Dock="Left"
+                       FontSize="20">
                 Pablo Martinez
             </TextBlock>
-            <Button DockPanel.Dock="Right">
+            <Button DockPanel.Dock="Right"
+                    Margin="5"
+                    Width="75">
                 Aceptar
             </Button>
-            <Button DockPanel.Dock="Right">
+            <Button DockPanel.Dock="Right"
+                    Margin="5"
+                    Width="75">
                 Cancelar
             </Button>
         </DockPanel>
         <Image Source="./assets/foto.jpg"
                DockPanel.Dock="Right"></Image>
         <StackPanel>
-            <Border BorderThickness="2" BorderBrush="Black">
+            <Border BorderThickness="2" 
+                    BorderBrush="Black"
+                    Margin="10">
                 <StackPanel Background="#FFB0D7F9">
                     <StackPanel Orientation="Horizontal"
                                 Margin="5">
                         <TextBlock Margin="0,0,5,0">Nombre</TextBlock>
-                        <TextBox Width="450"></TextBox>
+                        <TextBox Width="400"></TextBox>
                         <Image Source="./assets/info.png"
                                Stretch="Uniform"
-                               MaxHeight="25"></Image>
+                               MaxHeight="25"
+                               ToolTip="Máximo 100 caracteres"></Image>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"
                                 Margin="5">
                         <TextBlock Margin="0,0,5,0">Edad</TextBlock>
-                        <TextBox Width="450"></TextBox>
+                        <TextBox Width="400"></TextBox>
                         <Image Source="./assets/info.png"
                                Stretch="Uniform"
-                               MaxHeight="25"></Image>
+                               MaxHeight="25"
+                               ToolTip="Numero entero entre 0 y 100"></Image>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"
                                 Margin="5">
                         <TextBlock Margin="0,0,5,0">Direccion</TextBlock>
-                        <TextBox Width="450"></TextBox>
+                        <TextBox Width="400"></TextBox>
                         <Image Source="./assets/info.png"
                                Stretch="Uniform"
-                               MaxHeight="25"></Image>
+                               MaxHeight="25"
+                               ToolTip="Incluir el codigo postal"></Image>
                     </StackPanel>
                 </StackPanel>
             </Border>
             <Border BorderThickness="2"
-                    BorderBrush="Black">
+                    BorderBrush="Black" Margin="10">
                 <DockPanel Background="#FFFFD291" LastChildFill="False">
                     <Border DockPanel.Dock="Left">
                         <StackPanel>
